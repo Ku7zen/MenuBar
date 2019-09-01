@@ -5,16 +5,19 @@
   list-style: none;
   text-decoration: none;
 }
+
 .middle{
   background: #2f3640;
   position: absolute;
   max-height: 0%;
   max-width: 0%;
   transform: translate(-50%,-50%);
-  height: 1000px;
+}  
+.ld{
+  height: 100%
 }
 .menu{
-  width: 300px;
+  width: 250px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   overflow: hidden;
@@ -23,32 +26,36 @@
 
   overflow: hidden;
 }
-.btn{
+.navbar{
+background: #292f33;
+}
+
+.btnMenu{
   display: block;
   padding: 18px 25px;
-  background: #2f3640;
-  color: white;
+  background: #292f33;
+  color: #b2bec3;
   position: relative;
 }
-/*Cuadrado messages*/
-.btn:before{
+/*Cuadrado messages effecto*/
+.btnMenu:before{
   content: "";
   text-align: center;
   position: absolute;
   width: 14px;
   height: 14px;
-  background:#2f3640;
+  background:#292f33;
   left: 10px;
   bottom: -7px;
   transform: rotate(45deg);
 }
 /*Icono Menu */
-.btn i{
+.btnMenu i{
   margin-right:15px;
 }
 /*propiedades de Item*/
 .smenu{
-  background: #535c68;
+  background: #32383e;
   overflow: hidden;
   transition: max-height 0.5s;
   max-height: 0;
@@ -57,7 +64,7 @@
 .smenu a{
   display: block;
   padding: 16px 26px;
-  color: #b2bec3;
+  color: white;
   font-size: 14px;
   margin: 4px 0;
   position: relative;
